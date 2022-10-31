@@ -9,6 +9,16 @@
   align-items: center;
 }
 
+.row {
+  display: flex;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .week {
   display: flex;
   justify-content: space-evenly;
@@ -68,4 +78,8 @@ td {
 
 .modal {
   place-content: 0;
+  border: 1px solid black;
+  width: 600px;
+  justify-content: center;
+  align-items: center;
 }
