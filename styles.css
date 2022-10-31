@@ -29,12 +29,17 @@
 }
 
 .button {
-  border: 3px solid black;
+  border: 2px solid black;
   font-weight: 600;
   padding: 10px;
   width: 150px;
   box-shadow: 15px;
   background-color: white;
+}
+
+.button:hover {
+  background-color: #95bcf2;
+  color: black;
 }
 
 .buttondiv {
@@ -52,4 +57,15 @@ thead {
 
 tbody tr:nth-child(odd) {
   background-color: lightgray;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+.modal {
+  place-content: 0;
 }
