@@ -23,6 +23,11 @@
   font-size: 12px;
 }
 
+.weekday:hover {
+  background-color: gray;
+  cursor: pointer;
+}
+
 .button {
   border: 3px solid black;
   font-weight: 600;
@@ -38,4 +43,13 @@
 
 table {
   border: 2px solid black;
+  width: 700px;
+}
+
+thead {
+  background-color: darkgray;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: lightgray;
 }
