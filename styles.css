@@ -96,3 +96,7 @@ td {
 .black {
   background-color: rgb(60 60 60 / 50%);
 }
+
+.hidden {
+  display: none;
+}
