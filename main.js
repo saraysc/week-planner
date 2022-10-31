@@ -21,3 +21,12 @@ function close(event) {
   $entryModal.classList.add('hidden');
   $container2.classList.remove('black');
 }
+
+var $weekday = document.querySelector('.week');
+$weekday.addEventListener('click', selectedDay);
+
+var $selected = document.getElementById('selected-day');
+function selectedDay(event) {
+  console.log(event.target.innerText);
+  $selected.textContent = 'Scheduled Events for ' + event.target.innerText;
+}

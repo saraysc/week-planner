@@ -80,7 +80,7 @@ td {
   place-content: 0;
   border: 1px solid black;
   width: 600px;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -125,6 +125,7 @@ textarea {
 
 select {
   border: 2px solid black;
+  margin-right: 10px;
 }
 
 .container2 {
@@ -134,4 +135,13 @@ select {
 .select-dates {
   align-self: flex-start;
   margin-left: 20px;
+}
+
+button.row {
+  align-self: flex-end;
+  margin-right: 20px;
+}
+
+#selected-day {
+  font-weight: bold;
 }
