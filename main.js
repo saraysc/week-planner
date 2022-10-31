@@ -1,12 +1,9 @@
-var clickCount = 0;
 var $container2 = document.querySelector('.container2');
 
 function popUp(event) {
-  clickCount++;
-  if (clickCount % 2 !== 0) {
-    $entryModal.classList.remove('hidden');
-    $container2.classList.add('black');
-  }
+  $entryModal.classList.remove('hidden');
+  $container2.classList.add('black');
+  $tableTitle.textContent = 'Add Entry';
 }
 
 var $addEntry = document.querySelector('.buttondiv');
@@ -29,4 +26,14 @@ var $selected = document.getElementById('selected-day');
 function selectedDay(event) {
   console.log(event.target.innerText);
   $selected.textContent = 'Scheduled Events for ' + event.target.innerText;
+}
+
+var $update = document.querySelector('.update');
+var $tableTitle = document.querySelector('.entry');
+$update.addEventListener('click', upDate);
+
+function upDate(event) {
+  $entryModal.classList.remove('hidden');
+  $container2.classList.add('black');
+  $tableTitle.textContent = 'Update Entry';
 }
