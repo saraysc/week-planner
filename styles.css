@@ -82,6 +82,8 @@ td {
   width: 600px;
   justify-content: center;
   align-items: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .table-row {
@@ -127,4 +129,9 @@ select {
 
 .container2 {
   display: flex;
+}
+
+.select-dates {
+  align-self: flex-start;
+  margin-left: 20px;
 }
